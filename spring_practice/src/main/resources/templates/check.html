@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<ol>
+	<li><a th:href="@{/}">Practice1-01</a></li>
+	<li><a th:href="@{/hello/world}">Practice1-02</a></li>
+	<hr>
+	<li><a th:href="@{/first}">Practice2-01</a></li>
+	<li><a th:href="@{/show/redirect_page}">Practice2-02</a></li>
+	<hr>
+	<li><a th:href="@{/input}">Practice3-01</a></li>
+	<li><a th:href="@{/send/get_method(color=abc)}">Practice3-01 URLでGETパラメータ送信</a></li>
+	<li><a th:href="@{/favorite/input}">Practice3-02</a></li>
+	<hr>
+	<li><a th:href="@{/bmi/input}">Practice4-01</a></li>
+	<li><a th:href="@{/numguess/start}">Practice4-02</a></li>
+	<hr>
+	<li><a th:href="@{/fruits/list/all}">Practice5-01</a></li>
+	<li><a th:href="@{/fruits/list/sort/season}">Practice5-02</a></li>	
+	<li><a th:href="@{/fruits/list/sort/id}">Practice5-03</a></li>
+	<li><a th:href="@{/fruits/search/input}">Practice5-04</a></li>
+	<li><a th:href="@{/fruits/add/input}">Practice5-05</a></li>
+	<li><a th:href="@{/fruits/update}">Practice5-06</a></li>
+	<hr>
+	<li><a th:href="@{/fruits/area/list/all}">Practice6-01</a></li>
+	<li><a th:href="@{/fruits/select/area}">Practice6-02</a></li>
+	<hr>
+	<li><a th:href="@{/fruits_shop}">Practice7-01</a></li>
+	<li><a th:href="@{/fruits_shop/named/input}">Practice7-02</a></li>
+	<li><a th:href="@{/fruits_shop/query/input}">Practice7-03</a></li>
+	<li><a th:href="@{/fruits_shop/type/sort/bycount}">Practice7-04</a></li>
+	<hr>
+	<li><a th:href="@{/body_temp/input}">Practice8-01</a></li>
+	<hr>
+	<li><a th:href="@{/personal_info/input}">Practice9-01</a></li>
+	<hr>
+	<li><a th:href="@{/filter/abc}">Practice10-01 フィルタでのリダイレクト確認</a></li>
+	<li><a th:href="@{/filter/def}">Practice10-01 フィルタでの処理継続確認</a></li>
+	<hr>
+	<li><a th:href="@{/fortune}">Practice11-01</a></li>
+	<li><a th:href="@{/checkbox/input}">Practice11-02</a></li>
+	<li><a th:href="@{/layout/first}">Practice11-03</a></li>
+	
+</ol>		
+</body>
+</html>

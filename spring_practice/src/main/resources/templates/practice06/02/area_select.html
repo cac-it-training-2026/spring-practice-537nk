@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Spring 練習問題 基礎編 Practice6-02</h1>
+
+データベース操作(外部参照) 外部キーによる条件検索
+<hr>
+<p>
+<h4>果物と産地の情報 検索したい地域を選んでください。</h4>
+<form th:action="@{'TODO'}" method="get">
+<table>
+<tr>
+<td>地域名</td>
+<td><select name="'TODO'">
+<option th:each="area:${'TODO'}" th:value="${'TODO'}" th:text="${'TODO'}"></option>
+</select></td>
+</tr>
+</table>
+<input type="submit" value="検索"/>
+</form>
+</p>
+</body>
+</html>

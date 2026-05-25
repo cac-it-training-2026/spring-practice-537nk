@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Spring 練習問題 基礎編 Practice5-06</h1>
+
+データベース操作 更新
+<hr>
+<p>
+<h4>果物情報 更新対象のフルーツ名を選んでください。</h4>
+<form th:action="@{'TODO'}" method="'TODO'">
+<table>
+<tr>
+<td>フルーツ名</td>
+<td><select name="'TODO'">
+<option th:each="fruit:${'TODO'}" th:value="${'TODO'}" th:text="${'TODO'}"></option>
+</select>
+</td>
+</tr>
+</table>
+<input type="submit" value="選択"/>
+</form>
+</p>
+</body>
+</html>

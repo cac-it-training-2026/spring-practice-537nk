@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Spring 練習問題 基礎編 Practice11-02</h1>
+
+Thyemeleaf
+<hr>
+<p>
+<h4>訪れた場所一覧</h4>
+<th:block th:unless="${'TODO'}">
+	
+訪れた場所の数:<span th:text="${'TODO'}"></span><br>
+
+<table>
+<tr >
+<td>訪れた場所:</td>	
+<td th:each="name:${'TODO'}" th:text="${'TODO'}"></td>
+</tr>
+</table>
+<p th:if="${'TODO'}">旅行好きですね。</p>
+</th:block>
+<th:block th:if="${'TODO'}">
+訪れた場所はありません。
+</th:block>
+
+</p>
+
+</body>
+</html>
